@@ -101,7 +101,7 @@ from account import Account
                                     print('-' * 20)
 
                                     print(f"Account_name.......{search_account_name}")
-                                    # print(f"Email address.......{search_contact.email}")
+                                   
                             else:
                                     print("That account does not exist")
 
