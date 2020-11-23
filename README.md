@@ -1,21 +1,19 @@
-#
-#### Rovine Sydney Wanjala, 01/10/2020
-#### By Rovine Wanjala
+#### BY
+#### Rovine Sydney Wanjala, 20/11/2020
 ## Description
-{Application that accepts the user date of birth and excutes the the name of the user he/she was born according days of the week}
+Application that enable the user to create many accounts with different passwords and save them, each account having different passwords.
 ## Setup/Installation Requirements
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
+To install this application, go to terminal and clone using the link:
 ## Known Bugs
-{Are there issues that have not yet been resolved that you want to let users know you know? Outline any issues that would impact use of your application. Share any workarounds that are in place. }
+So far, on this application no errors discovered, but if there's an error you would discover on installation, feel free to reach out.
 ## Technologies Used
-{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}
+Technology used in the development of this application is python i.e flask.
 ## Support and contact details
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
+You can find me:
+1. twiter: @rovinewanjala.
+2. instangram @rovinewanjala.
+3. facebook @sygel sydney.
+4. hollame +254712387089.
 ### License
 *{MIT License
 
