@@ -5,12 +5,12 @@ class Account:
 
     account_list = [] 
 
-    def __init__(self,username,password):
+    def __init__(self,account_name,username,password):
 
       # docstring removed for simplicity
 
 
-         self.account_name = account_name
+        self.account_name = account_name
         self.username = username
         self.password = password
        
