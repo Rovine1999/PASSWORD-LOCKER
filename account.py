@@ -7,16 +7,13 @@ class Account:
 
     def __init__(self,account_name,username,password):
 
-      # docstring removed for simplicity
-
-
         self.account_name = account_name
         self.username = username
         self.password = password
        
         
-        account_list = [] # Empty contact list
-      # Init method up here
+        account_list = [] 
+      
     def save_account(self):
 
         '''
