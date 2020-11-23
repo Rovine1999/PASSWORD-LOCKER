@@ -1,5 +1,5 @@
 import unittest # Importing the unittest module
-from account import account # Importing the contact class
+from account import Account # Importing the contact class
 
 
 class TestAccount(unittest.TestCase):
@@ -10,14 +10,12 @@ class TestAccount(unittest.TestCase):
     Args:
         unittest.TestCase: TestCase class that helps in creating test cases
     '''
-
-     
-
     def setUp(self):
+
         '''
         Set up method to run before each test cases.
         '''
-        self.new_contact = Contact("facebook", "SygelSydney", "rovine1999") 
+        self.new_account = Account("facebook", "SygelSydney", "rovine1999") 
 
 
     def test_init(self):
@@ -66,34 +64,36 @@ class TestAccount(unittest.TestCase):
             self.new_account.save_account()
             test_account = Account("Test","username","account_name","password") 
             test_contact.save_contact()
-            self.assertEqual(len(Account.account_list,2)
+            self.assertEqual(len(Account.account_list),2)
 
             # More tests above
     def test_delete_account(self):
-            '''
-            test_delete_account to test if we can remove an account from our account list
-            '''
-            self.new_account.save.account()
-            test_account = Account("Test","username","account_name","password") # new contact
-            test_account.save_account()
 
-            self.new_contact.test_delete_account()# Deleting a contact object
-            self.assertEqual(len(Account.account_list),1)
+        '''
+        test_delete_account to test if we can remove an account from our account list
+        '''
+        self.new_account.save.account()
+        test_account = Account("Test","username","account_name","password") # new contact
+        test_account.save_account()
+
+        self.new_contact.test_delete_account()# Deleting a contact object
+        self.assertEqual(len(Account.account_list),1)
 
 
 
     def test_find_account_by_account_name(self):
-            '''
-            test to check if we can find an account by account_name and display information
-            '''
 
-            self.new_account.save_account()
-            test_account = Account("Test","username","account_name","password") # new contact
-            test_account.save_account()
+        '''
+        test to check if we can find an account by account_name and display information
+        '''
 
-            found_account = Account.find_by_account_name("facebook")
+        self.new_account.save_account()
+        test_account = Account("Test","username","account_name","password") # new contact
+        test_account.save_account()
 
-            # self.assertEqual(found_contact.email,test_contact.email)
+        found_account = Account.find_by_account_name("facebook")
+
+        # self.assertEqual(found_contact.email,test_contact.email)
 
 
 
@@ -118,6 +118,7 @@ class TestAccount(unittest.TestCase):
 
 
     def test_display_all_accounts(self):
+
         '''
         method that returns a list of all contacts saved
         '''
