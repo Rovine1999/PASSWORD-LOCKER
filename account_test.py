@@ -1,5 +1,5 @@
-import unittest # Importing the unittest module
-from account import Account # Importing the contact class
+import unittest 
+from account import Account 
 
 
 class TestAccount(unittest.TestCase):
@@ -44,7 +44,7 @@ class TestAccount(unittest.TestCase):
             '''
             Account.account_list = []
 
-        # other test cases here
+       
     def test_save_multiple_account(self):
             '''
             test_save_multiple_account to check if we can save multiple account
@@ -66,17 +66,17 @@ class TestAccount(unittest.TestCase):
             test_contact.save_contact()
             self.assertEqual(len(Account.account_list),2)
 
-            # More tests above
+            
     def test_delete_account(self):
 
         '''
         test_delete_account to test if we can remove an account from our account list
         '''
         self.new_account.save.account()
-        test_account = Account("Test","username","account_name","password") # new contact
+        test_account = Account("Test","username","account_name","password") 
         test_account.save_account()
 
-        self.new_contact.test_delete_account()# Deleting a contact object
+        self.new_contact.test_delete_account()
         self.assertEqual(len(Account.account_list),1)
 
 
@@ -88,12 +88,12 @@ class TestAccount(unittest.TestCase):
         '''
 
         self.new_account.save_account()
-        test_account = Account("Test","username","account_name","password") # new contact
+        test_account = Account("Test","username","account_name","password") 
         test_account.save_account()
 
         found_account = Account.find_by_account_name("facebook")
 
-        # self.assertEqual(found_contact.email,test_contact.email)
+        
 
 
 
