@@ -3,7 +3,7 @@
 ## Description
 Application that enable the user to create many accounts with different passwords and save them, each account having different passwords.
 ## Setup/Installation Requirements
-To install this application, go to terminal and clone using the link:
+To install this application, go to terminal and clone using the link:https://github.com/Rovine1999/PASSWORD-LOCKER.git
 ## Known Bugs
 So far, on this application no errors discovered, but if there's an error you would discover on installation, feel free to reach out.
 ## Technologies Used
