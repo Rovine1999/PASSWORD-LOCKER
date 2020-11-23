@@ -49,11 +49,11 @@ def main():
         print('\n')
 
         while True:
-                print("Use these short codes : cc - create a new account, dc - display accounts, fc -find an account, ex -exit the account list ")
+                print("Use these short codes : ca - create a new account, da - display accounts, fa -find an account, ex -exit the account list ")
 
                 short_code = input().lower()
 
-                if short_code == 'cc':
+                if short_code == 'ca':
                         print("New Account")
                         print("-"*10)
 
@@ -74,7 +74,7 @@ def main():
                         print(f"New Account {account_name} {username} created")
                         print ('\n')
 
-                elif short_code == 'dc':
+                elif short_code == 'da':
 
                         if display_accounts():
                             print("Here is a list of all your accounts")
