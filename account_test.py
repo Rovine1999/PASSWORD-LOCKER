@@ -1,6 +1,6 @@
 import unittest 
 from account import  User
-from account import Account 
+# from account import Account 
 
 class TestUser(unittest.TestCase):
     def setUp(self):
@@ -9,6 +9,10 @@ class TestUser(unittest.TestCase):
     def test_init(self):
         self.assertEqual(self.new_user.username,"Wanjala")
         self.assertEqual(self.new_user.password,12345)
+
+    def test_save_user(self):
+        self.new_user.save_new_user()
+        self.assertEqual(len(User.User_List),1)
 
 
 
