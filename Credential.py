@@ -33,11 +33,11 @@ def check_existing_accounts(account_name):
     '''
     return Account.account_exist(account_name)
 
-def display_accounts():
+def display_account():
     '''
-    Function that returns all the saved contacts
+    Function that returns all the saved account
     '''
-    return Account.display_accounts()
+    return Account.display_account()
 
 
 
@@ -76,11 +76,11 @@ def main():
 
                 elif short_code == 'da':
 
-                        if display_accounts():
+                        if display_account():
                             print("Here is a list of all your accounts")
                             print('\n')
 
-                        for account in display_accounts():
+                        for account in display_account():
                             print(f"{account_name} {username} .....{password}")
 
                             print('\n')
