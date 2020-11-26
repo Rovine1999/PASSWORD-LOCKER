@@ -1,3 +1,11 @@
+class User:
+    """
+    Class that generates new intances of User
+    """
+    def __init__(self,username,password):
+        self.username = username
+        self.password = password 
+        
 class Account:
     """
     Class that generates new instances of contacts.
