@@ -67,21 +67,6 @@ class Account:
         return cls.account_list
 
 
-    # @classmethod
-    # def find_by_number(cls,account_name):
-    #     '''
-    #     Method that takes in a account name and returns an account that matches that account.
-
-    #     Args:
-    #         account_name: Account name to search for
-    #     Returns :
-    #         Account of person that matches the account name.
-    #     '''
-
-    #     for account in cls.account_list:
-    #         if account.account_name == account_name:
-    #             return account
-
 
     @classmethod
     def account_exist(cls,account_name):
