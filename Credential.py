@@ -69,7 +69,7 @@ def main():
                         
 
 
-                        save_accounts(create_account(account_name,username,password)) # create and save new contact.
+                        save_accounts(create_account(account_name,username,password)) 
                         print ('\n')
                         print(f"New Account {account_name} {username} created")
                         print ('\n')
@@ -95,7 +95,7 @@ def main():
 
                         search_account_name = input()
                         if check_existing_accounts(search_account_name):
-                                search_contact = find_account(search_account_name)
+                                search_account = find_account(search_account_name)
                                 print(f"{search_account_name} ")
                                 print('-' * 20)
 
