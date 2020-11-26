@@ -11,6 +11,19 @@ class User:
     def save_new_user(self):
         User.User_List.append(self)
 
+    @classmethod
+    def display_users(cls):
+        """
+        this is a method that returns all users in the User_List
+        """
+        return cls.User_List
+
+    def delete_user(self):
+        """
+        delete_user method that deletes a saved user
+        """
+        User.User_List.remove(self)
+
 # class Account:
 #     """
 #     Class that generates new instances of contacts.

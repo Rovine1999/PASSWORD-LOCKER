@@ -14,6 +14,27 @@ class TestUser(unittest.TestCase):
         self.new_user.save_new_user()
         self.assertEqual(len(User.User_List),1)
 
+    def test_save_multiple_user(self):
+        self.new_user.save_new_user()
+        second_user = User("Rovine",2345)
+        second_user.save_new_user()
+        self.assertEqual(len(User.User_List),2)
+
+    def tearDown (second_user):
+        User.User_List = []
+
+    def test_display_all_users(self):
+        self.assertEqual(User.display_users(),User.User_List) 
+
+    def test_delete_user(self):
+        self.new_user.save_new_user()
+        test_user = User("Rovine", 2345)
+        test_user.save_new_user()
+        
+
+        self.new_user.delete_user()
+        self.assertEqual(len(User.User_List),1)
+
 
 
 # class TestAccount(unittest.TestCase):
@@ -59,15 +80,6 @@ class TestUser(unittest.TestCase):
 #             Account.account_list = []
 
        
-#     def test_save_multiple_account(self):
-#             '''
-#             test_save_multiple_account to check if we can save multiple account
-#             objects to our account_list
-#             '''
-#             self.new_account.save_account()
-#             test_contact = Contact("Test","username","account_name","password") 
-#             test_contact.save_contact()
-#             self.assertEqual(len(Account.account_list),2)
 
         
 #     def test_save_multiple_account(self):
